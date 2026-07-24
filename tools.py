@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 from agents import function_tool
 
 import os
-import asyncio
 import smtplib
 from email.message import EmailMessage
 

@@ -1,12 +1,10 @@
 import asyncio
 
-from urllib3 import response
 from context import INSTRUCTIONS1, INSTRUCTIONS2, INSTRUCTIONS3, SALES_MANAGER_INSTRUCTIONS, AGENT_AS_TOOL_DESCRIPTION
 from tools import send_email_tool
 from dotenv import load_dotenv
-import requests
 
-from agents import Agent, Runner, SQLiteSession, trace, ModelSettings
+from agents import Agent, Runner, trace, ModelSettings
 
 load_dotenv(override=True)
 MODEL_NAME = "gpt-5.4-mini"
